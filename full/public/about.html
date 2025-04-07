@@ -1,0 +1,223 @@
+<html lang="en" xmlns:x-on="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Visit www.pixelrocket.store to learn how to become a frontend web developer</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,300,500&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    <div>
+      <p class="py-4 bg-green-500 text-green-900 text-center">Welcome to our web application! <a href="https://www.pixelrocket.store">Our System for protect you</a></p>
+      <section x-data="{ mobileNavOpen: false }">
+        <div class="container px-4 mx-auto">
+          <div class="flex items-center justify-between pt-5 pb-2.5 -m-2">
+            <div class="w-auto p-2">
+              
+            </div>
+            <div class="w-auto p-2">
+              <div class="flex flex-wrap items-center">
+                <div class="w-auto hidden lg:block">
+                  <ul class="flex items-center mr-12">
+                    <li class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="about.html">About</a></li>
+                    <li class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="pricing.html">Users rating</a></li>
+                    <li class="mr-12 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="blog.html">Driver drowsine</a></li>
+                    <li class="text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="w-auto hidden lg:block">
+                  <div class="inline-block"><a class="inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300" href="login.html">Login</a></div>
+              <div class="inline-block"><a class="inline-block px-8 py-4 ml-20 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300" href="register.html">Registred</a></div>
+                </div>
+                <div class="w-auto lg:hidden">
+                  <button class="relative z-10 inline-block" x-on:click="mobileNavOpen = !mobileNavOpen">
+                    <svg class="text-green-500" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                      <path d="M37 32H19M37 24H19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-black opacity-60" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative z-10 px-9 pt-8 h-full bg-black overflow-y-auto">
+            <div class="flex flex-wrap justify-between h-full">
+              <div class="w-full">
+                <div class="flex items-center justify-between -m-2">
+                  <div class="w-auto p-2"><a class="inline-block" href="#"><img src="images/logo.svg" alt=""/></a></div>
+                  <div class="w-auto p-2">
+                    <button class="inline-block text-white" x-on:click="mobileNavOpen = !mobileNavOpen">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center py-16 w-full">
+                <ul>
+                  <li class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="about.html">About</a></li>
+                  <li class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="pricing.html">Users rating</a></li>
+                  <li class="mb-8 text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="blog.html">Driver drowsine</a></li>
+                  <li class="text-white font-medium hover:text-opacity-90 tracking-tighter"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="inline-block"><a class="inline-block px-8 py-4 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300" href="login.html">Login</a></div>
+              <div class="inline-block"><a class="inline-block px-8 py-4 ml-20 text-white hover:text-black tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300" href="register.html">Registred</a></div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="py-20 overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <div class="md:max-w-xl text-center mx-auto mb-20"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Check our stats</span>
+            <h2 class="font-heading text-7xl text-white tracking-tighter-xl">About us</h2>
+          </div>
+          <div class="max-w-5xl mx-auto">
+            <div class="flex flex-wrap lg:items-center -m-8 lg:-m-12">
+              <div class="w-full md:w-1/2 p-8 lg:p-12">
+                <div class="max-w-max mx-auto"><img class="rounded-3xl" src="template-assets/images/index/drowsine6.jpeg" alt=""/></div>
+              </div>
+              <div class="w-full md:w-1/2 p-8 lg:p-12"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Check our stats</span>
+                <h2 class="mb-6 text-6xl md:text-7xl text-white tracking-tighter">Enhancing Road Safety with Innovation</h2>
+                <p class="mb-10 text-white text-opacity-60 md:max-w-xs">DrowsyDrive ensures driver safety with real-time drowsiness detection and alerts to prevent accidents and save lives</p><a class="inline-block px-8 py-4 text-white hover:text-black font-medium tracking-tighter hover:bg-green-400 border-2 border-white focus:border-green-400 focus:border-opacity-40 hover:border-green-400 focus:ring-4 focus:ring-green-400 focus:ring-opacity-40 rounded-full transition duration-300" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-20 overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap items-center -m-8">
+            <div class="w-full md:w-1/2 p-8">
+              <div class="md:max-w-md"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">Check our stats</span>
+                <h2 class="font-heading mb-8 text-6xl md:text-7xl text-white tracking-tighter-xl">Meet the Minds Behind DrowsyDrive</h2>
+                <p class="mb-8 text-lg text-gray-300">At the heart of DrowsyDrive is our passionate and innovative team: Oussama Hassania, Mohamed Elkandali, and Zakaria Amliha. Together, we are dedicated to developing a cutting-edge web application that ensures driver safety through advanced drowsiness detection technology. Combining expertise, creativity, and a shared mission to make roads safer, our team works tirelessly to create a user-friendly and reliable system that helps prevent accidents and saves lives.</p><a class="inline-block text-white hover:text-opacity-80 font-medium underline transition duration-500" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+              <div class="mx-auto max-w-lg md:mr-0">
+                <div class="flex flex-wrap -m-4">
+                  <div class="w-1/2 p-4">
+                    <div class="flex flex-wrap">
+                      <div class="mb-8 w-full"><img class="w-full rounded-lg" src="template-assets/images/index/9andali.jpeg" alt=""/></div>
+                      <div class="w-full"><img class="w-full rounded-lg" src="template-assets/images/index/zakaria.jpeg" alt=""/></div>
+                    </div>
+                  </div>
+                  <div class="w-1/2 p-4">
+                    <div class="flex flex-wrap mt-24">
+                      <div class="mb-8 w-full "><img class="w-full rounded-lg" src="template-assets/images/index/oussama.jpeg" alt=""/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-24 overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <div class="mb-20 md:max-w-xl text-center mx-auto"><span class="inline-block mb-4 text-sm text-green-400 font-medium tracking-tighter">our team</span>
+            <h2 class="font-heading text-7xl lg:text-8xl text-white tracking-7xl lg:tracking-8xl">Our Team</h2>
+          </div>
+          <div class="flex flex-wrap -m-8">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-8">
+              <div class="text-center"><img class="mb-9 mx-auto rounded-full" src="template-assets/images/index/ziko2.jpg" alt=""/><span class="inline-block mb-2 text-gray-300">Programming Student</span>
+                <h3 class="text-3xl text-white">Zakaria Amliha</h3>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-8">
+              <div class="text-center"><img class="mb-9 mx-auto rounded-full" src="template-assets/images/index/oussama2.jpg" alt=""/><span class="inline-block mb-2 text-gray-300">Programming Student</span>
+                <h3 class="text-3xl text-white">Oussama Hassania</h3>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-8">
+              <div class="text-center"><img class="mb-9 mx-auto rounded-full" src="template-assets/images/index/9andali3.jpg" alt=""/><span class="inline-block mb-2 text-gray-300">Programming Student</span>
+                <h3 class="text-3xl text-white">Mohamed Elkandali</h3>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      
+       <section class="bg-gray-50 overflow-hidden">
+        <div class="py-14 bg-black rounded-b-7xl"></div>
+        <div class="py-24">
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap justify-center -m-8 mb-28">
+              <div class="w-full md:w-1/2 lg:w-4/12 p-8">
+                <div class="md:max-w-xs"><img class="mb-7" src="images/logo-dark.svg" alt=""/>
+                  <p class="text-gray-400 font-medium">Global Bank is a strategic branding agency focused on brand creation, rebrands, and brand</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-2/12 p-8">
+                <h3 class="mb-6 text-lg text-black font-medium">About</h3>
+                <ul>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Contact</a></li>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Blog</a></li>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Our Story</a></li>
+                  <li><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-2/12 p-8">
+                <h3 class="mb-6 text-lg text-black font-medium">Company</h3>
+                <ul>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Contact</a></li>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Blog</a></li>
+                  <li class="mb-2.5"><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Our Story</a></li>
+                  <li><a class="inline-block text-lg font-medium text-gray-400 hover:text-black transition duration-300" href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="w-full md:w-1/2 lg:flex-1 p-8">
+                <div class="flex flex-wrap -m-2">
+                  <div class="w-full p-2"><a class="block py-5 px-8 bg-white rounded-full" href="#">
+                      <div class="flex flex-wrap items-center -m-2">
+                        <div class="w-auto "><img src="template-assets/images/footers/lgfb.svg" alt=""/></div>
+                        <div class="flex-1 p-2">
+                          <p class="text-black">Follow us on Facebook for updates</p>
+                        </div>
+                      </div></a></div>
+                  <div class="w-full p-2"><a class="block py-5 px-8 bg-white rounded-full" href="#">
+                      <div class="flex flex-wrap items-center -m-2">
+                        <div class="w-auto"><img src="template-assets/images/footers/lginsta.svg" alt=""/></div>
+                        <div class="flex-1 p-2">
+                          <p class="text-black">Follow us on Instagram for updates</p>
+                        </div>
+                      </div></a></div>
+                  <div class="w-full p-2"><a class="block py-5 px-8 bg-white rounded-full" href="#">
+                      <div class="flex flex-wrap items-center -m-2">
+                        <div class="w-auto"><img src="template-assets/images/footers/lglinked.svg" alt=""/></div>
+                        <div class="flex-1 p-2">
+                          <p class="text-black">Follow us on Linkedin for updates</p>
+                        </div>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-between -m-2">
+              <div class="w-auto p-2">
+                <p class="inline-block text-sm font-medium text-black text-opacity-60">© 2023 Global Bank</p>
+              </div>
+              <div class="w-auto p-2">
+                <div class="flex flex-wrap items-center -m-2 sm:-m-7">
+                  <div class="w-auto p-2 sm:p-7"><a class="inline-block text-sm text-black text-opacity-60 hover:text-opacity-100 font-medium transition duration-300" href="#">Terms of Use</a></div>
+                  <div class="w-auto p-2 sm:p-7"><a class="inline-block text-sm text-black text-opacity-60 hover:text-opacity-100 font-medium transition duration-300" href="#">Privacy Policy</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
